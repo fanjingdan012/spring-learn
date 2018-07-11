@@ -1,14 +1,12 @@
-package com.bigname.demo03.controller;
+package com.fjd.ssm.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bigname.demo03.core.Member;
-import com.bigname.demo03.service.MemberService;
+import com.fjd.ssm.core.Member;
+import com.fjd.ssm.service.MemberService;
 
 @RestController
 public class LoginController {

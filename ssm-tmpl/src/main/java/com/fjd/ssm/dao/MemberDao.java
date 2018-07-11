@@ -5,7 +5,7 @@
 //import org.apache.ibatis.annotations.Select;
 //import org.springframework.stereotype.Component;
 //
-//import com.bigname.demo03.core.Member;
+//import com.fjd.ssm.core.Member;
 //
 //public interface MemberDao {
 //	Member selectMemberByName(@Param("name")String name)throws Exception;

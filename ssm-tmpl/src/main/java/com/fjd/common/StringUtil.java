@@ -1,4 +1,4 @@
-package com.bigname.common;
+package com.fjd.common;
 
 public class StringUtil {
 	public static boolean isNullOrZero (String str) {

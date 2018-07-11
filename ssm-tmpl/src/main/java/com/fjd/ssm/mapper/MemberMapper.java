@@ -1,14 +1,13 @@
-package com.bigname.demo03.mapper;
+package com.fjd.ssm.mapper;
 
 
 
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
-import com.bigname.demo03.core.Member;
+import com.fjd.ssm.core.Member;
 
 @Component
 @Mapper

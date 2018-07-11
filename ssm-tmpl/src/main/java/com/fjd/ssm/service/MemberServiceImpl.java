@@ -1,14 +1,12 @@
-package com.bigname.demo03.service;
+package com.fjd.ssm.service;
 
-
-import java.io.Serializable;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bigname.common.StringUtil;
-import com.bigname.demo03.core.Member;
-import com.bigname.demo03.mapper.MemberMapper;
+import com.fjd.common.StringUtil;
+import com.fjd.ssm.core.Member;
+import com.fjd.ssm.mapper.MemberMapper;
 
 @Service
 public class MemberServiceImpl implements MemberService{

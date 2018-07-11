@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bigname.demo03.mapper.MemberMapper">
-	<select id="selectMemberByName" resultType="com.bigname.demo03.core.Member" parameterType="string">
+<mapper namespace="com.fjd.ssm.mapper.MemberMapper">
+	<select id="selectMemberByName" resultType="com.fjd.ssm.core.Member" parameterType="string">
 		select * from test.member where name = #{name}
 	</select>
 </mapper>

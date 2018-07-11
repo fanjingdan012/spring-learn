@@ -1,4 +1,4 @@
-package com.bigname.demo03.core;
+package com.fjd.ssm.core;
 
 public class Member {
 	private int id;

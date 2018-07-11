@@ -1,8 +1,8 @@
-package com.bigname.demo03.service;
+package com.fjd.ssm.service;
 
 import org.springframework.stereotype.Service;
 
-import com.bigname.demo03.core.Member;
+import com.fjd.ssm.core.Member;
 
 @Service
 public interface MemberService {

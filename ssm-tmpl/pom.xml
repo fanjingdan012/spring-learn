@@ -3,11 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.bigname</groupId>
-	<artifactId>MavenDemo03</artifactId>
+	<groupId>com.fjd</groupId>
+	<artifactId>ssm-tmpl</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MavenDemo03 Maven Webapp</name>
+	<name>ssm template</name>
 	<url>http://maven.apache.org</url>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -153,7 +153,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>MavenDemo03</finalName>
+		<finalName>ssm-tmpl</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
