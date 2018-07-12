@@ -30,3 +30,6 @@ curl --request GET \
   --header 'x-tenantid: tenant1'
 ```
 will read from test db
+
+# Code
+See `MultitenantDataSource.java` extended from `AbstractRoutingDataSource`, calling determineCurrentLookupKey() to determin DataSource dynamicly
