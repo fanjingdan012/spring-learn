@@ -1,32 +1,22 @@
 package com.fjd.mbt.model;
 
-import java.util.Calendar;
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import javax.persistence.Version;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.*;
+import java.util.Calendar;
 
 @MappedSuperclass
 public abstract class BaseModel {
 
     @JsonIgnore
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(dataType = "java.util.Calendar")
     @Basic(optional = false)
     @Column(insertable = true, updatable = false)
     private Calendar createdAt;
 
     @JsonIgnore
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(dataType = "java.util.Calendar")
     @Column(insertable = false, updatable = true)
     private Calendar updatedAt;
 

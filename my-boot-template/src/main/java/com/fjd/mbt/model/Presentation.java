@@ -17,43 +17,33 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-import io.swagger.annotations.ApiModelProperty;
 
 @Entity
 public class Presentation extends BaseModel {
-    @ApiModelProperty
     private String title;
 
-    @ApiModelProperty
     private String content;
 
-    @ApiModelProperty
     private String location;
 
-    @ApiModelProperty(dataType = "java.util.Calendar")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Calendar startDate;
 
-    @ApiModelProperty(dataType = "java.util.Calendar")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Calendar endDate;
 
     @JsonBackReference(value = "conference_presentation")
-    @ApiModelProperty
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "conference_id", referencedColumnName = "id", nullable = false)
     private Conference conference;
 
     @JsonManagedReference(value = "presentation_tag")
-    @ApiModelProperty
     @OneToMany(mappedBy = "presentation", cascade = CascadeType.ALL,  orphanRemoval = true)
     private List<Tag> tag;
 
-    @ApiModelProperty
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     private BaseUser speaker;
 
-    @ApiModelProperty
     @ManyToMany(mappedBy = "presentations")
     private List<BaseUser> audiences;
 

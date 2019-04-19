@@ -7,11 +7,11 @@
         </encoder>
     </appender>
 
-    <root level="${LOG_ROOT_LEVEL:-WARN}">
+    <root level="${LOG_ROOT_LEVEL:-DEBUG}">
         <appender-ref ref="${APPENDER:-STDOUT}"/>
     </root>
 
-    <logger name="com.sap.grc.archimedes" level="${LOG_APP_LEVEL:-INFO}"/>
+    <logger name="com.fjd.mbt" level="${LOG_APP_LEVEL:-INFO}"/>
    
     
 </configuration>

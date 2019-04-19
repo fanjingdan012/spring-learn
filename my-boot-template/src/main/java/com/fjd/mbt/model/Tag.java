@@ -1,25 +1,16 @@
 package com.fjd.mbt.model;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import io.swagger.annotations.ApiModelProperty;
+import javax.persistence.*;
 
 
 @Entity
 public class Tag extends BaseModel {
 
-    @ApiModelProperty
     private String name;
 
     @JsonBackReference(value = "presentation-tag")
-    @ApiModelProperty
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "presentation_id", referencedColumnName = "id")
     private Presentation presentation;
@@ -51,24 +42,21 @@ public class Tag extends BaseModel {
     }
 
     /**
-     * @param name
-     *            the name to set
+     * @param name the name to set
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * @param presentation
-     *            the presentation to set
+     * @param presentation the presentation to set
      */
     public void setPresentation(Presentation presentation) {
         this.presentation = presentation;
     }
 
     /**
-     * @param baseUser
-     *            the baseUser to set
+     * @param baseUser the baseUser to set
      */
     public void setBaseUser(BaseUser baseUser) {
         this.baseUser = baseUser;
